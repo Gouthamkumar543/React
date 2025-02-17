@@ -1,0 +1,57 @@
+#Footer{
+    background-color: rgb(224, 224, 224);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding: 5% 0;
+    border-bottom: 1px solid black;
+}
+#Footer div{
+    text-align: center;
+    width: 28%;
+}
+#Footer div h1{
+    color: #000957;
+    padding-bottom: 5px;
+}
+#Footer div p{
+    padding-bottom: 5px;
+}
+#Footer div p:hover{
+    color: orange;
+    text-decoration:  underline wavy orange;
+}
+#Footer div a{
+    display: block;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+.let{
+    font-size: 25px;
+    text-decoration: underline !important;
+}
+#font{
+    background-color: rgb(224, 224, 224);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 10%;
+}
+#font > h1{
+    color: #000957;
+    font-size: 2.5rem;
+}
+#font > div{
+    display: flex;
+    column-gap: 100px;
+}
+#font > div i{
+    font-size: 30px;
+}
+#font > div > p{
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}

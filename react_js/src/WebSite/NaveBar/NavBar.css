@@ -1,0 +1,32 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.Nav{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Nav > h1{
+    padding-left: 10%;
+    color: #000957;
+}
+.Nav > div{
+    padding-right: 20%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.Nav > div > span{
+    color: #000957;
+    font-size: 1.3rem;
+    padding-right: 5%;
+}
+.Nav > div > button{
+    background-color: #000957;
+    color: #fff;
+    border: 0px;
+    padding: 10px 40px;
+    font-size: 1.3rem;
+}

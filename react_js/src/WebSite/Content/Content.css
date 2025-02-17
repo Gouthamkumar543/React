@@ -1,0 +1,130 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.Content{
+    padding: 10%;
+    display: flex;
+}
+.Content > .Content_left{
+    width: 50%;
+}
+.Content > .Content_left > h1{
+    font-size: 3.8rem;
+    color: #000957;
+}
+.Content > .Content_left > p{
+    width: 70%;
+    color: #000957;
+    padding: 40px 0;
+    font-size: 1.2rem;
+}
+.Content > .Content_left > button{
+    margin: 0 15px;
+    padding: 10px 30px;
+    font-size: 20px;
+    border: 0px;
+    color: #000957;
+    box-shadow: 1px 5px 10px #000957;
+}
+.Content > .Content_left > #btn_1{
+    background-color: #000957;
+    color: #fff;
+}
+.Content > .Content_right{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.Content_1{
+    display: flex;
+    row-gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.Content_1 > h1{
+    width: 40%;
+    font-size: 3.8rem;
+    color: #000957;
+}
+.Content_1 > p{
+    width: 40%;
+    color: #000957;
+    font-size: 1.2rem;
+    padding: 20px 0;
+}
+.Content_1 > button{
+    padding: 10px 30px;
+    font-size: 20px;
+    border: 0px;
+    background-color: #000957;
+    color: #fff;
+    box-shadow: 1px 5px 10px #000957;
+}
+.Content_2, .Content_3,.Content_4, .Content_5{
+    padding: 0px 5%;
+    display: flex;
+    justify-content: space-around;
+    margin: 15% 0;
+}
+.Content_2_left, .Content_3_right, .Content_4_left{
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+.Content_2_right, .Content_3_left, .Content_4_right, .Content_5_left{
+    width: 40%;
+}
+.Content_2_right > h1, .Content_3_left > h1, .Content_4_right > h1, .Content_5_left > h1{
+    width: 80%;
+    color: #000957;
+    font-size: 3rem;
+}
+.Content_2_right > p, .Content_3_left > p, .Content_4_right > p, .Content_5_left > p{
+    padding: 30px 0;
+    width: 80%;
+    font-size: 1.2rem;
+    color: #000957;
+}
+.Content_2_right > #Content_2_Sub_block{
+    display: flex;
+    column-gap: 50px;
+}
+.Content_2_right > #Content_2_Sub_block div{
+    width: 50%;
+}
+.Content_2_right > #Content_2_Sub_block div h3{
+    padding: 20px 0;
+}
+.Content_2_right > #Content_2_Sub_block div p{
+    color: #000957;
+}
+.Content_3_left{
+    width: 40%;
+}
+.Content_5_right{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 10px;
+}
+[placeholder="Message here"] {
+    height: 200px !important;
+}
+.Content_5_right > input{
+    height: 20px;
+    padding: 1% 5%;
+    background-color: rgb(235, 235, 235);
+    border: 0px;
+}
+#btn{
+    background-color: #000957;
+    color: #fff;
+    border: 0px;
+    text-shadow: 1px 1px 5px #fff;
+    margin-left: 60%;
+    font-size: 20px;
+    height: 50px;
+}
