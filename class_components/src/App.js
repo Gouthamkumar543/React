@@ -11,6 +11,15 @@ class App extends react.Component{
     }
   }
 
+  componentDidMount(){
+    console.log("mount");
+    alert("Welcome")
+  }
+
+
+  componentDidUpdate(){
+    console.log("updated");
+  }
 
   render(){
     const Name = "goutham"

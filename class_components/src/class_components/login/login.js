@@ -12,6 +12,9 @@ class Login extends React.Component{
         this.setState({Login:!this.state.Login})
     }
 
+    componentDidUpdate(){
+        console.log("Login updated");
+    }
 
     render(){
         return(
