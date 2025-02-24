@@ -1,0 +1,19 @@
+.product-Container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.product-card{
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid black;
+    width: 400px;
+}
+.product-card > img{
+    width: 100%;
+}
+.product-card > button{
+    margin: 5px;
+}

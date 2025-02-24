@@ -1,0 +1,10 @@
+.Home-page{
+    background-image:linear-gradient( rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("https://img.freepik.com/premium-photo/restaurant-food-restaurant-menu-photos-menu_830198-777.jpg?semt=ais_hybrid");
+    background-size: cover;
+    height: 100vh;
+}
+.Home-page > div{
+    width: 50%;
+    color: aliceblue;
+    padding: 60px 0 0 100px;
+}
