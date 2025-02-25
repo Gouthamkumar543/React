@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 export const Products = ({ data }) => {
 
     const Navigate = useNavigate()
-    // console.log(data);
+    console.log(data);
 
   return (
     <div className='product-Container'>
@@ -15,8 +15,8 @@ export const Products = ({ data }) => {
                     <img src={x.image} alt=''/>
                     <h3>{x.name}</h3>
                     <p>{x.cuisine}</p>
-                    <button>ingredients</button>
-                    <button>Order</button>
+                    <span>cookingTime:{x.cookTimeMinutes}min</span>
+                    <p>Rating :{x.rating}</p>
                 </div>
             )
         })}
