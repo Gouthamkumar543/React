@@ -13,7 +13,7 @@ export const Navbar1 = () => {
           <Nav className='NavLinks'>
             <Nav.Link href="/home">Home</Nav.Link>
             <Nav.Link href="/About">About</Nav.Link>
-            <Nav.Link href="/menu">Menu</Nav.Link>
+            <Nav.Link href="/products">products</Nav.Link>
             <Button variant="primary">Login</Button>
             <Button variant="primary">SingUp</Button>
             <div>

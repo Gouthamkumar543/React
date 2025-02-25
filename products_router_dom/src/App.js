@@ -27,8 +27,8 @@ export const App = () => {
       <Routes>
         <Route path='/home' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
-        <Route path='/menu' element={<Products data={data}/>} />
-        <Route path='/menu/:name' element={<SingleProduct data={data}/>}/>
+        <Route path='/products' element={<Products data={data}/>} />
+        <Route path='/products/:name' element={<SingleProduct data={data}/>}/>
       </Routes>
       <Footer/>
     </div>

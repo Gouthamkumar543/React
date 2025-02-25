@@ -11,7 +11,7 @@ export const Products = ({ data }) => {
     <div className='product-Container'>
         {data.map(x=>{
             return(
-                <div className='product-card' onClick={()=>Navigate(`/menu/${x.name}`)}>
+                <div className='product-card' onClick={()=>Navigate(`/products/${x.name}`)}>
                     <img src={x.image} alt=''/>
                     <h3>{x.name}</h3>
                     <p>{x.cuisine}</p>

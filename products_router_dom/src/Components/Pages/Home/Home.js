@@ -1,22 +1,21 @@
 import React from 'react'
-import { GiFullPizza } from "react-icons/gi";
+import { GiFullPizza, GiNoodles, GiChickenOven, GiCakeSlice } from "react-icons/gi";
 import { GoDotFill } from "react-icons/go";
-import { GiChickenOven } from "react-icons/gi";
-import { GiNoodles } from "react-icons/gi";
 import { LuBeef } from "react-icons/lu";
-import { BiSolidOffer } from "react-icons/bi";
+import { BiBookBookmark } from "react-icons/bi";
 import "./Home.css"
 
 export const Home = () => {
   return (
     <div className='Home-page'>
       <div>
-        <h1 style={{color:'lightgray'}}><strong>Welcome to Foodies – Where Every Bite is a Delight!</strong></h1>
-        <h4 style={{color:"grey"}}>At Foodies, we believe that great food brings people together. Whether you're craving a crispy pizza, a juicy burger, or a comforting bowl of pasta, we've got something for every taste bud!</h4>
-        <h2 style={{color:'lightgray'}}><strong>What We Offer:</strong></h2>
-        <h4 style={{color:"grey"}}><GoDotFill />Freshly prepasilver, high-quality meals  <GiFullPizza style={{color:"silver"}} size={30} /> <GiChickenOven style={{color:"silver"}} size={30} /></h4>
-        <h4 style={{color:"grey"}}><GoDotFill />A variety of cuisines, from Italian to Asian  <GiNoodles style={{color:"silver"}} size={30} /> <LuBeef style={{color:"silver"}} size={30} /></h4>
-        <h4 style={{color:"grey"}}><GoDotFill />Special discounts & exciting deals  <BiSolidOffer style={{color:"silver"}} size={30} /></h4>
+        <h1 style={{ color: 'antiquewhite' }}><strong>Welcome to Foodies – Your Ultimate Recipe Hub!</strong></h1>
+        <h4 style={{ color: "antiquewhite" }}>Discover mouthwatering recipes from around the world! Whether you're in the mood for a hearty pasta, a sizzling chicken dish, or a sweet dessert, we've got recipes to inspire your cooking journey.</h4>
+        <h2 style={{ color: 'antiquewhite' }}><strong>Explore Our Recipes:</strong></h2>
+        <h4 style={{ color: "antiquewhite" }}><GoDotFill /> Tasty & easy-to-follow recipes for all skill level <BiBookBookmark style={{ color: "antiquewhite" }} size={30} /></h4>
+        <h4 style={{ color: "antiquewhite" }}><GoDotFill /> Delicious Italian & Asian dishes to try at home <GiNoodles style={{ color: "antiquewhite" }} size={30} /> <GiFullPizza style={{ color: "antiquewhite" }} size={30} /></h4>
+        <h4 style={{ color: "antiquewhite" }}><GoDotFill /> Flavorful meat-based recipes for beef & chicken lovers <GiChickenOven style={{ color: "antiquewhite" }} size={30} /> <LuBeef style={{ color: "antiquewhite" }} size={30}/></h4>
+        <h4 style={{ color: "antiquewhite" }}><GoDotFill /> Sweet and delightful dessert recipes to satisfy cravings <GiCakeSlice style={{ color: "antiquewhite" }} size={30} /></h4>
       </div>
     </div>
   )
