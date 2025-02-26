@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/React/static/css/main.a5bcbc48.css",
-    "main.js": "/React/static/js/main.7b8f6645.js",
-    "static/js/453.e32d207f.chunk.js": "/React/static/js/453.e32d207f.chunk.js",
-    "index.html": "/React/index.html",
-    "main.a5bcbc48.css.map": "/React/static/css/main.a5bcbc48.css.map",
-    "main.7b8f6645.js.map": "/React/static/js/main.7b8f6645.js.map",
-    "453.e32d207f.chunk.js.map": "/React/static/js/453.e32d207f.chunk.js.map"
+    "main.css": "/React/products_router_dom/static/css/main.a5bcbc48.css",
+    "main.js": "/React/products_router_dom/static/js/main.7297534f.js",
+    "static/js/453.e32d207f.chunk.js": "/React/products_router_dom/static/js/453.e32d207f.chunk.js",
+    "index.html": "/React/products_router_dom/index.html",
+    "main.a5bcbc48.css.map": "/React/products_router_dom/static/css/main.a5bcbc48.css.map",
+    "main.7297534f.js.map": "/React/products_router_dom/static/js/main.7297534f.js.map",
+    "453.e32d207f.chunk.js.map": "/React/products_router_dom/static/js/453.e32d207f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a5bcbc48.css",
-    "static/js/main.7b8f6645.js"
+    "static/js/main.7297534f.js"
   ]
 }
