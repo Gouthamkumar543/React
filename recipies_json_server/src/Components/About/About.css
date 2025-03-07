@@ -1,0 +1,50 @@
+.About-page{
+    background-image:linear-gradient( rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("https://png.pngtree.com/thumb_back/fw800/background/20220930/pngtree-indian-food-restaurant-food-close-up-photo-image_48782044.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+.About-page > div{
+    color: antiquewhite;
+    width: 70%;
+    padding-left: 60px;
+}
+p{
+    font-size: 20px;
+}
+.About-link{
+    text-decoration: none;
+    font-size: 25px;
+    color: aqua;
+}
+.About-link:hover{
+    text-decoration: underline;
+    color: lightblue;
+}
+
+@media (max-width:1024px){
+    .About-page{
+        height: auto;
+        background-image: none;
+        background-color: black;
+    }
+    .About-page > div{
+        width: 100%;
+        padding: 20px;
+    }
+    .About-page > div > h1{
+        color: white;
+        font-size: 20px;
+    }
+    .About-page > div > h2{
+        color: white;
+        font-size: 18px;
+    }
+    .About-page > div > p{
+        color: white;
+        font-size: 16px;
+    }
+    .About-page > div > ul{
+        color: white;
+        font-size: 16px;
+    }
+}

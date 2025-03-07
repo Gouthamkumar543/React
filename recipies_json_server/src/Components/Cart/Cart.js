@@ -16,11 +16,11 @@ const Cart = () => {
         .catch(err=>{console.log(err)})
     },[afterDelete])
 
-    console.log(data);
+    // console.log(data);
 
     const deleteCartItem = async (z)=>{
         try{
-            await axios.delete(`http://localhost:5000/cartitems/${Number(z.id)}`)
+            await axios.delete(`http://localhost:5000/cartitems/${z.id}`)
             setAfterDelete(z)
         }catch(err){
             console.log(err);
