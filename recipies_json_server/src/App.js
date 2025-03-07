@@ -5,6 +5,7 @@ import Home from './Components/Home/Home'
 import About from './Components/About/About'
 import Recipies from './Components/Recipies/Recipies'
 import Cart from './Components/Cart/Cart'
+import { AddNewRecipie } from './Components/AddNewRecipie/AddNewRecipie'
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route path='/home' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/recipies' element={<Recipies/>}/>
+        <Route path='/addrecipie' element={<AddNewRecipie/>}/>
         <Route path='/cart' element={<Cart/>}/>
       </Routes>
     </div>

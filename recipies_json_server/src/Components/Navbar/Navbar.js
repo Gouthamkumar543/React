@@ -20,7 +20,7 @@ const Navbar1 = () => {
     }).catch(err=>{console.log(err)})
   },[])
 
-  console.log(cartData);
+  // console.log(cartData);
 
   return (
     <div>
@@ -29,10 +29,11 @@ const Navbar1 = () => {
           <Navbar.Brand href=""><SiFoodpanda size={25}/> <strong>Recipies</strong></Navbar.Brand>
           <Navbar.Toggle />
           <Navbar.Collapse>
-            <Nav style={{ gap: "10px" }}>
+            <Nav style={{ gap: "10px"}}>
               <Nav.Link href="/home">Home</Nav.Link>
               <Nav.Link href="/about">About</Nav.Link>
               <Nav.Link href="/recipies">Recipies</Nav.Link>
+              <Button onClick={()=>{navigate("/addrecipie")}}>AddNewRecipie</Button>
               <Button>LogIn</Button>
               <Button>SignUp</Button>
               <Button onClick={() => { navigate("/cart") }}><FaOpencart size={30} /><Badge bg="secondary" style={{ top: "-10px" }}>{cartData.length}</Badge></Button>

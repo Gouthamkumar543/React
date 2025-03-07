@@ -41,7 +41,7 @@ const Recipies = () => {
                         <Card.Title><h4>{x.name}</h4></Card.Title>
                         <Card.Img variant="top" src={x.image} />
                         <Card.Body>
-                            <Card.Text><h4>{x.cuisine}</h4></Card.Text>
+                            <h4>{x.cuisine}</h4>
                             <Card.Text>PrepTimeMinutes: {x.prepTimeMinutes}min</Card.Text>
                             <Card.Text>Difficulty: {x.difficulty}</Card.Text>
                             <Card.Text>Rating: {x.rating}</Card.Text>
