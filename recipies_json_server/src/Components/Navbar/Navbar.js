@@ -10,7 +10,7 @@ const Navbar1 = () => {
   const navigate = useNavigate()
 
   const [cartData,setCartData] = useState([])
-  // const [badgeUpdate,setBadgeUpdate] = useState()
+  // const [badgeUpdate,setBadgeUpdate] = useState(false)
 
   useEffect(()=>{
     axios.get("http://localhost:5000/cartitems")
@@ -36,7 +36,7 @@ const Navbar1 = () => {
               <Button onClick={()=>{navigate("/addrecipie")}}>AddNewRecipie</Button>
               <Button>LogIn</Button>
               <Button>SignUp</Button>
-              <Button onClick={() => { navigate("/cart") }}><FaOpencart size={30} /><Badge bg="secondary" style={{ top: "-10px" }}>{cartData.length}</Badge></Button>
+              <Button onClick={() => { navigate("/cart")}}><FaOpencart size={30} /><Badge bg="secondary" style={{ top: "-10px" }}>{cartData.length}</Badge></Button>
             </Nav>
           </Navbar.Collapse>
         </Container>

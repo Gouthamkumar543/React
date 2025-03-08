@@ -21,7 +21,7 @@ export const SingleRecipie = () => {
     }, [])
 
     const itemFound = data.find((x) => x.name === name) || {}
-    console.log(itemFound);
+    // console.log(itemFound);
     
 
     return (

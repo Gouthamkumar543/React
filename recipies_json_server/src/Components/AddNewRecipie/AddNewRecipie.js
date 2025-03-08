@@ -30,7 +30,7 @@ export const AddNewRecipie = () => {
 
     const SubmitDetails = async (z) => {
         z.preventDefault()
-        console.log(newRecipieDetails);
+        // console.log(newRecipieDetails);
         await axios.post("http://localhost:5000/recipes", newRecipieDetails)
         setShow(false)
         navigate("/recipies")

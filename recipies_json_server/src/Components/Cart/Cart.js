@@ -28,7 +28,7 @@ const Cart = () => {
     }
 
   return (
-    <div style={{margin:"2px 0"}}>
+    <div style={{margin:"2px 0", height:"100vh"}}>
         {data.length > 0 ? <Table striped bordered hover variant="dark">
               <thead>
                   <tr>

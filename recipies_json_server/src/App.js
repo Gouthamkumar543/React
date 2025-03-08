@@ -7,6 +7,7 @@ import Recipies from './Components/Recipies/Recipies'
 import Cart from './Components/Cart/Cart'
 import { AddNewRecipie } from './Components/AddNewRecipie/AddNewRecipie'
 import { SingleRecipie } from './Components/SingleRecipie/SingleRecipie'
+import { Footer } from './Components/Footer/Footer'
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Route path='/recipies/:name' element={<SingleRecipie/>}/>
         <Route path='/cart' element={<Cart/>}/>
       </Routes>
+      <Footer/>
     </div>
   )
 }
