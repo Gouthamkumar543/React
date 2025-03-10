@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Button, Form, FormGroup } from 'react-bootstrap'
-import { createUserWithEmailAndPassword } from 'firebase/auth'
+import { createUserWithEmailAndPassword, updateProfile } from 'firebase/auth'
 import { set, ref } from 'firebase/database'
 import { author, db } from '../FireBase/FireBase'
 import { useNavigate } from 'react-router-dom'
@@ -13,10 +13,11 @@ export const SignUp = () => {
         name: '',
         email: '',
         password: '',
-        confirmpassword: ''
+        confirmpassword: '',
+        role:"user"
     })
 
-    const { name, email, password, confirmpassword } = signUpDetails
+    const { name, email, password, confirmpassword,role } = signUpDetails
 
     const HandleSignUpChanges = (x) => {
         setSignUpDetails({ ...signUpDetails, [x.target.name]: x.target.value })
@@ -29,13 +30,23 @@ export const SignUp = () => {
         try {
             const SignUpUser = await createUserWithEmailAndPassword(author, email, password)
             alert('SignUp Sucessfully Done!!!')
-            await set(ref(db,"Users/"+name),{
-                name:name,
-                email:email,
-                id:SignUpUser.user.uid
+
+            // console.log(SignUpUser);
+
+            const User = SignUpUser.user
+            // console.log(User);
+
+            await updateProfile(User,{displayName:name})
+
+            let RoleType = role === "admin" ? "Admins" : "Users"
+            await set(ref(db, `Data/${RoleType}/` + name), {
+                name: name,
+                email: email,
+                id: SignUpUser.user.uid,
+                role:role
             })
             navigate("/LogIn")
-        }catch(err){
+        } catch (err) {
             console.log(err);
             alert("SignUp failed")
         }
@@ -44,6 +55,13 @@ export const SignUp = () => {
     return (
         <div style={{ display: "flex", justifyContent: "center" }}>
             <Form style={{ width: 500 }} onSubmit={HandleSignUpSubmit}>
+                <FormGroup >
+                    {/* <Form.Label>Role</Form.Label> */}
+                    <Form.Select name='role' onChange={HandleSignUpChanges}>
+                        <option value={"user"}>User</option>
+                        <option value={"admin"}>Admin</option>
+                    </Form.Select>
+                </FormGroup>
                 <FormGroup >
                     <Form.Label>Name:</Form.Label>
                     <Form.Control type='text' name='name' onChange={HandleSignUpChanges} required />

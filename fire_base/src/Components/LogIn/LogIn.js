@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import { Form, FormGroup , Button } from 'react-bootstrap'
 import {signInWithEmailAndPassword} from "firebase/auth"
-import { author } from '../FireBase/FireBase'
+import { author,db } from '../FireBase/FireBase'
 import { useNavigate } from 'react-router-dom'
+import { get, ref, set } from 'firebase/database'
 
 export const LogIn = () => {
 
@@ -24,7 +25,17 @@ export const LogIn = () => {
     const HandleLogInSubmit = async (z)=>{
         z.preventDefault()
         try{
-            await signInWithEmailAndPassword(author,email,password)
+            const UserCred = await signInWithEmailAndPassword(author,email,password)
+            console.log(UserCred);
+
+            const LogInUser = UserCred.user.displayName
+
+            const Admin = ref(db,`Data/Admins/${LogInUser}`)
+            const User = ref(db,`Data/Users/${LogInUser}`)
+
+            const AdminData = await set(Admin)
+            const UserData = await set(User)
+            
             alert("Login SucessFull")
             navigate("/Dashboard")    
         }catch(err){
