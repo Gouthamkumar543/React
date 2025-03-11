@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { Form, FormGroup , Button } from 'react-bootstrap'
 import {signInWithEmailAndPassword} from "firebase/auth"
-import { author,db } from '../FireBase/FireBase'
+import { author, db } from '../FireBase/FireBase'
 import { useNavigate } from 'react-router-dom'
-import { get, ref, set } from 'firebase/database'
+import { get, ref } from 'firebase/database'
 
 export const LogIn = () => {
 
@@ -33,11 +33,23 @@ export const LogIn = () => {
             const Admin = ref(db,`Data/Admins/${LogInUser}`)
             const User = ref(db,`Data/Users/${LogInUser}`)
 
-            const AdminData = await set(Admin)
-            const UserData = await set(User)
+            const AdminData = await get(Admin)
+            const UserData = await get(User)
+
+            // console.log(AdminData,"AdminData");
+            // console.log(UserData,"UserData");
+        
+
+            if(AdminData.exists()){
+                navigate("/Dashboard",{state:{ PersonData: AdminData.val(), role:"Admins" }})
+            }else if(UserData.exists()){
+                navigate("/Dashboard",{state:{ PersonData: UserData.val(), role:"Users"}})
+            }else{
+                alert("No Data Found")
+            }
             
             alert("Login SucessFull")
-            navigate("/Dashboard")    
+            // navigate("/Dashboard")    
         }catch(err){
             console.log(err);
             alert("LogIn failed email or password wronge")
