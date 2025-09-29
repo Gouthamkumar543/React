@@ -2,8 +2,8 @@ import React from 'react'
 
 export const Footer = () => {
   return (
-    <div style={{background:"black",color:"white",textAlign:"center",fontSize:"20px"}}>
-        <p>@2025 Foodies-All recipes</p>
+    <div style={{background:"blue",color:"white",textAlign:"center"}}>
+        <p style={{margin:0}}>@2025 Foodies-All recipes</p>
     </div>
   )
 }

@@ -7,6 +7,7 @@ import { About } from './../../product_router_dom/src/Components/Pages/About/Abo
 import { Products } from './../../product_router_dom/src/Components/Pages/Products/Products'
 import { SingleProduct } from './../../product_router_dom/src/Components/Pages/singleProduct/singleProduct'
 import { Footer } from './../../product_router_dom/src/Components/Footer/Footer'
+import "./App.css"
 
 export const App = () => {
 
