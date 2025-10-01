@@ -7,7 +7,7 @@ export const Cards = (items) => {
     }
     return (
         <div>
-            <img src={items.I} width="100%" height="50%" />
+            <img src={items.I} width="300px" height="50%" />
             <h1>{items.T}</h1>
             <p>{items.D}</p>
             <p>Price : {items.P}</p>

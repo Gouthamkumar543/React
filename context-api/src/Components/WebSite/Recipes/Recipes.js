@@ -23,7 +23,7 @@ const Recipes = () => {
                         return (
                             <div style={{ border: "2px solid black", width: "300px" }}>
                                 <h1>{x.name}</h1>
-                                <img src={x.image} width={200} />
+                                <img src={x.image} width={200} alt='pic'/>
                                 <button onClick={()=>addToCart(x)}>Add to Cart</button>
                             </div>
                         )

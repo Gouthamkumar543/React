@@ -1,8 +1,12 @@
 import React from 'react'
+import MainPage from './Components/MainPage/MainPage'
+import './App.css'
 
 const App = () => {
   return (
-    <div>Hi my name is goutham kumar</div>
+    <div>
+      <MainPage/>
+    </div>
   )
 }
 
